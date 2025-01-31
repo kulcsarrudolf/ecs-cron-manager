@@ -1,0 +1,30 @@
+{
+  "name": "ecs-cron-manager",
+  "version": "1.0.0",
+  "description": "ECS multi-instance cron manager",
+  "main": "index.ts",
+  "repository": "https://github.com/kulcsarrudolf/ecs-cron-manager.git",
+  "author": "kulcsarrudolf <kulcsarrudolf@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node --watch --import tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src --fix",
+    "format": "prettier --write src"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.12.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
