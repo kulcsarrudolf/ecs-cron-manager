@@ -1,9 +1,8 @@
 import { Router } from 'express';
+import userRouter from './users.route';
 
 const router = Router();
 
-router.get('/', (req, res) => {
-  res.json({ message: 'Hello, TypeScript API!' });
-});
+router.use('/users', userRouter);
 
 export default router;
